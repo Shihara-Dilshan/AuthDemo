@@ -1,5 +1,6 @@
-export const change = () => {
+export const change = (payload) => {
     return {
-        type: "LOGGED_IN"
+        type: "LOGGED_IN",
+        payload: payload
     }
 }

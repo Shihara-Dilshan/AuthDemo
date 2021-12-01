@@ -1,13 +1,13 @@
 const otherReducer = (state = { issLoggedIn: false }, action) => {
   switch (action.type) {
     case "LOGGED_IN":
-      state = true;
+      state = { isLoggedIn: true };
       return state;
     case "LOGGED_OUT":
-      state = false;
+      state = { isLoggedIn: false };
       return state;
     default:
-      return false;
+      return { isLoggedIn: false };
   }
 };
 

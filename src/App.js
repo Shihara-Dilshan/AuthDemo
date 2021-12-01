@@ -9,7 +9,8 @@ function App() {
   const isLoggedIn = useSelector((state) => state.auth);
   const dispatch = useDispatch();
   useEffect(() => {
-    
+    // const {auth } = isLoggedIn;
+    console.log(isLoggedIn.isLoggedIn)
   }, [])
   return (
     <div className="App">
@@ -18,14 +19,14 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <button onClick={() => {dispatch(change())}}>sdsd</button>
+        <button onClick={() => {dispatch(change({ASDSd: "sddsd"}))}}>sdsd</button>
         <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          {isLoggedIn.toString()}
+        dfgd
         </a>
       </header>
     </div>

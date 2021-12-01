@@ -1,13 +1,14 @@
-const authReducer = (state = { isLoggedIn: false }, action) => {
+const authReducer = (state = {}, action) => {
   switch (action.type) {
     case "LOGGED_IN":
-      state = true;
+      console.log(action.payload);
+      state = { isLoggedIn: true };
       return state;
     case "LOGGED_OUT":
-      state = false;
+      state = { isLoggedIn: false };
       return state;
     default:
-      return false;
+      return { isLoggedIn: false };
   }
 };
 
